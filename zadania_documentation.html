@@ -1,0 +1,215 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">zadania</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ctomasz%5Conedrive%20-%20the%20opole%20university%20of%20technology%5Cstudia%5Cmagisterskie%5Csemestr%20ii%5Czaawansowane%20techniki%20programowania%5Czadanie2%5Czadania.py">c:\users\tomasz\onedrive - the opole university of technology\studia\magisterskie\semestr ii\zaawansowane techniki programowania\zadanie2\zadania.py</a></td></tr></table>
+    <p><span class="code">Modu³&nbsp;`zadania`&nbsp;zawiera&nbsp;definicje&nbsp;klas&nbsp;dla&nbsp;ró¿nych&nbsp;typów&nbsp;zadañ:&nbsp;<br>
+<a href="#Zadanie">Zadanie</a>,&nbsp;<a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>&nbsp;i&nbsp;<a href="#ZadanieRegularne">ZadanieRegularne</a>.<br>
+&nbsp;<br>
+Ka¿da&nbsp;klasa&nbsp;reprezentuje&nbsp;ró¿ne&nbsp;aspekty&nbsp;zadania.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#Zadanie">Zadanie</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a>
+</dt><dt class="heading-text"><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Zadanie">class <strong>Zadanie</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Zadanie">Zadanie</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;czy_wykonane=False,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentuj¹ca&nbsp;podstawowe&nbsp;zadanie.<br>
+&nbsp;<br>
+Atrybuty:<br>
+----------<br>
+tytul&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tytu³&nbsp;zadania.<br>
+opis&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opis&nbsp;zadania.<br>
+termin_wykonania&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Termin&nbsp;wykonania&nbsp;zadania.<br>
+czy_wykonane&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;wykonania&nbsp;zadania.<br>
+szczegoly&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dodatkowe&nbsp;szczegó³y&nbsp;zadania.<br>
+informacje&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dodatkowe&nbsp;informacje&nbsp;o&nbsp;zadaniu.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Zadanie-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, czy_wykonane=False, **kwargs)</dt><dd><span class="code">Inicjalizuje&nbsp;nowe&nbsp;zadanie.<br>
+&nbsp;<br>
+Parametry:<br>
+----------<br>
+tytul&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tytu³&nbsp;zadania.<br>
+opis&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opis&nbsp;zadania.<br>
+termin_wykonania&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Termin&nbsp;wykonania&nbsp;zadania.<br>
+czy_wykonane&nbsp;:&nbsp;bool,&nbsp;opcjonalnie<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;wykonania&nbsp;(domyœlnie&nbsp;False).<br>
+**kwargs&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opcjonalne&nbsp;szczegó³y&nbsp;i&nbsp;informacje&nbsp;o&nbsp;zadaniu.</span></dd></dl>
+
+<dl><dt><a name="Zadanie-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;reprezentacjê&nbsp;tekstow¹&nbsp;zadania.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sformatowany&nbsp;tekst&nbsp;zawieraj¹cy&nbsp;szczegó³y&nbsp;zadania.</span></dd></dl>
+
+<dl><dt><a name="Zadanie-for_file"><strong>for_file</strong></a>(self)</dt><dd><span class="code">Generuje&nbsp;tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;w&nbsp;formacie&nbsp;do&nbsp;zapisu&nbsp;w&nbsp;pliku.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;w&nbsp;formacie&nbsp;CSV.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadaniePriorytetowe">class <strong>ZadaniePriorytetowe</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;priorytet,&nbsp;czy_wykonane=False,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentuj¹ca&nbsp;zadanie&nbsp;o&nbsp;wysokim&nbsp;priorytecie.<br>
+&nbsp;<br>
+Atrybuty:<br>
+----------<br>
+priorytet&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Poziom&nbsp;priorytetu&nbsp;zadania.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadaniePriorytetowe-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, priorytet, czy_wykonane=False, **kwargs)</dt><dd><span class="code">Inicjalizuje&nbsp;nowe&nbsp;zadanie&nbsp;priorytetowe.<br>
+&nbsp;<br>
+Parametry:<br>
+----------<br>
+tytul&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tytu³&nbsp;zadania.<br>
+opis&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opis&nbsp;zadania.<br>
+termin_wykonania&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Termin&nbsp;wykonania&nbsp;zadania.<br>
+priorytet&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Poziom&nbsp;priorytetu&nbsp;zadania.<br>
+czy_wykonane&nbsp;:&nbsp;bool,&nbsp;opcjonalnie<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;wykonania&nbsp;(domyœlnie&nbsp;False).<br>
+**kwargs&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opcjonalne&nbsp;szczegó³y&nbsp;i&nbsp;informacje&nbsp;o&nbsp;zadaniu.</span></dd></dl>
+
+<dl><dt><a name="ZadaniePriorytetowe-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;reprezentacjê&nbsp;tekstow¹&nbsp;zadania&nbsp;priorytetowego.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sformatowany&nbsp;tekst&nbsp;zawieraj¹cy&nbsp;szczegó³y&nbsp;zadania&nbsp;priorytetowego.</span></dd></dl>
+
+<dl><dt><a name="ZadaniePriorytetowe-for_file"><strong>for_file</strong></a>(self)</dt><dd><span class="code">Generuje&nbsp;tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;priorytetowe&nbsp;w&nbsp;formacie&nbsp;do&nbsp;zapisu&nbsp;w&nbsp;pliku.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;priorytetowe&nbsp;w&nbsp;formacie&nbsp;CSV.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadanieRegularne">class <strong>ZadanieRegularne</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadanieRegularne">ZadanieRegularne</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;powtarzalnosc,&nbsp;czy_wykonane=False,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentuj¹ca&nbsp;zadanie&nbsp;regularne.<br>
+&nbsp;<br>
+Atrybuty:<br>
+----------<br>
+powtarzalnosc&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Czêstotliwoœæ&nbsp;powtarzania&nbsp;zadania.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadanieRegularne-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, powtarzalnosc, czy_wykonane=False, **kwargs)</dt><dd><span class="code">Inicjalizuje&nbsp;nowe&nbsp;zadanie&nbsp;regularne.<br>
+&nbsp;<br>
+Parametry:<br>
+----------<br>
+tytul&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tytu³&nbsp;zadania.<br>
+opis&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opis&nbsp;zadania.<br>
+termin_wykonania&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Termin&nbsp;wykonania&nbsp;zadania.<br>
+powtarzalnosc&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Czêstotliwoœæ&nbsp;powtarzania&nbsp;zadania.<br>
+czy_wykonane&nbsp;:&nbsp;bool,&nbsp;opcjonalnie<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;wykonania&nbsp;(domyœlnie&nbsp;False).<br>
+**kwargs&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Opcjonalne&nbsp;szczegó³y&nbsp;i&nbsp;informacje&nbsp;o&nbsp;zadaniu.</span></dd></dl>
+
+<dl><dt><a name="ZadanieRegularne-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;reprezentacjê&nbsp;tekstow¹&nbsp;zadania&nbsp;regularnego.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sformatowany&nbsp;tekst&nbsp;zawieraj¹cy&nbsp;szczegó³y&nbsp;zadania&nbsp;regularnego.</span></dd></dl>
+
+<dl><dt><a name="ZadanieRegularne-for_file"><strong>for_file</strong></a>(self)</dt><dd><span class="code">Generuje&nbsp;tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;regularne&nbsp;w&nbsp;formacie&nbsp;do&nbsp;zapisu&nbsp;w&nbsp;pliku.<br>
+&nbsp;<br>
+Zwraca:<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tekst&nbsp;reprezentuj¹cy&nbsp;zadanie&nbsp;regularne&nbsp;w&nbsp;formacie&nbsp;CSV.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
